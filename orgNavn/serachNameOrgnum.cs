@@ -11,7 +11,7 @@ namespace egetnavn.Controllers
         private const string baseUrl = "https://data.brreg.no/enhetsregisteret/api/enheter/";
 
         [HttpGet]
-        public async Task<IActionResult> Get(string query)
+        public async Task<IActionResult> Get(string inputfraweb?)
         {
             if (string.IsNullOrWhiteSpace(query))
             {
